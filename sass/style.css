@@ -1,0 +1,27 @@
+.body1 {
+  background-color: red;
+}
+
+.ancor {
+  text-decoration: none;
+  color: white;
+}
+
+.ancor:hover, :active {
+  color: #ceb9b9;
+  text-decoration: none;
+}
+
+.heightnav {
+  height: 26px;
+}
+
+.navcolor {
+  background-color: #b3a088;
+}
+
+.objheight {
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
