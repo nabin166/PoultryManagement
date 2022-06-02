@@ -1,0 +1,49 @@
+.dashboardcolor{
+    background-color: rgb(32, 70, 74);
+    height: 100vh;
+    border-radius: 0px 9px 9px 0px;
+}
+.backgr{
+    background-color: rgb(122, 62, 62);
+    transition-duration: 2s;
+}
+.backgr:hover{
+    background-color: rgb(108, 161, 166);
+  
+}
+.hov{
+    transition-duration: 0.7s;
+}
+.hov:hover{
+    background-color: rgb(112, 137, 149);
+}
+
+// record bar non active
+
+.recbarcursor{
+    
+    color: black;
+
+}
+.recbarcursor:hover{
+    color: rgb(90, 40, 40);
+    text-decoration: none;
+    border-radius: 7px;
+    border: 1px solid red;
+    
+}
+.recact{
+  
+    color: rgb(170, 87, 87);
+    border-radius: 7px;
+    border: 1px solid red;
+
+}
+.recact:hover{
+
+    text-decoration: none;
+    color: rgb(170, 87, 87);
+}
+
+
+

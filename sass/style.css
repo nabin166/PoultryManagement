@@ -24,4 +24,49 @@
   margin-top: 30px;
 }
 
+.dashboardcolor {
+  background-color: #20464a;
+  height: 100vh;
+  border-radius: 0px 9px 9px 0px;
+}
+
+.backgr {
+  background-color: #7a3e3e;
+  transition-duration: 2s;
+}
+
+.backgr:hover {
+  background-color: #6ca1a6;
+}
+
+.hov {
+  transition-duration: 0.7s;
+}
+
+.hov:hover {
+  background-color: #708995;
+}
+
+.recbarcursor {
+  color: black;
+}
+
+.recbarcursor:hover {
+  color: #5a2828;
+  text-decoration: none;
+  border-radius: 7px;
+  border: 1px solid red;
+}
+
+.recact {
+  color: #aa5757;
+  border-radius: 7px;
+  border: 1px solid red;
+}
+
+.recact:hover {
+  text-decoration: none;
+  color: #aa5757;
+}
+
 /*# sourceMappingURL=style.css.map */
