@@ -7,7 +7,7 @@
   color: white;
 }
 
-.ancor:hover, :active {
+.ancor:hover {
   color: #ceb9b9;
   text-decoration: none;
 }

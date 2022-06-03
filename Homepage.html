@@ -2,13 +2,15 @@
 <html lang="en">
 
 <head>
-
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="./sass/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Homepage</title>
 </head>
@@ -39,72 +41,82 @@
                             Health</a></div>
 
                 </div>
+            
                 <div style=" font-size: large; border-radius: 7px;" class="d-flex pl-2 hov">
                     <div><i class="fa-solid fa-egg" style="color: rgb(115, 184, 172);"></i></div>
                     <div style="margin-top: 4px; margin-left: 3px; font-size: smaller;"> <a href="#" class="ancor">
-                            production</a></div>
-
+                            Detail</a></div>
                 </div>
             </div>
         </div>
 
         <!-- Right side  -->
         <div class="col-9">
-              <!-- Title -->
-              <p style="font-size:13px;" class=" position-absolute mt-1"><strong class="text-danger">Add Records</strong> as your daily routine .</p>
+            <!-- Title -->
+            <p style="font-size:13px;" class=" position-absolute mt-1"><strong class="text-danger">Add Records</strong>
+                as your daily routine .</p>
             <!-- profile -->
             <div class=" d-flex flex-row-reverse">
                 <div>
                     <p class=" px-2">Niraj Baral</p>
                 </div>
-                <div><i class="fa-solid fa-id-card" style="color: rgb(151, 88, 88);"></i>
+                <div><i class="fa-solid fa-id-card" style="height: 20px; color: rgb(151, 88, 88);"></i>
                 </div>
             </div>
             <!-- Top Record bar sections -->
             <div class="d-flex mt-2 " style=" margin-left:5vh">
-                <div class=" "   style="border-radius: 7px;"><a href="" class="recact pl-2 pr-2"><strong class=" text-danger">Farm_</strong>Details</a></div>
-                <div class="pl-2 pr-2 "><a href="" class="recbarcursor pl-2 pr-2">Disease</a></div>
-                <div class="pl-2 pr-2"><a href="" class="recbarcursor pl-2 pr-2">Vaccination</a></div>
+                <div class=" " style="border-radius: 7px;"><a href="" id="clkdet" class="recact pl-2 pr-2"><strong
+                            class=" text-danger">Farm_</strong>Details</a></div>
+                <div class="pl-2 pr-2 "><a id="clkdis" style="cursor:pointer;" class="recbarcursor pl-2 pr-2">Disease</a>
+                </div>
+                <div class="pl-2 pr-2 "><a id="clkprod" style="cursor:pointer;" class="recbarcursor pl-2 pr-2">Production</a>
+                </div>
+                <!-- <div class="pl-2 pr-2"><a href="" class="recbarcursor pl-2 pr-2">Vaccination</a></div> -->
             </div>
             <hr class="w-100 position-absolute " style="top: 65px;">
 
             <!-- Detail form -->
 
-            <form class=" container mt-4">
-                <div class="form-row">
-               
-                  <div class="col">
-                    <label for="name">Farm_Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Name">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Address of farm">
-                </div>           
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+            <div id="print"></div>
+
+            <div id="hide">
+                <form class=" container mt-4 row">
+                    <div class="form-row col-lg-5 col-sm-6">
+                        <div class="col">
+                            <label for="name">Poultry_Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Poultry_Name">
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-5 col-sm-6">
+                        <label for="inputAddress">Poultry_Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Poultry_Address">
+                    </div>
+                    <div class="form-group col-lg-2">
+                        <label for="inputnumbers">Hen_count</label>
+                        <input type="number" class="form-control" id="inputnumbers" placeholder="Hen count">
+                    </div>
+                    <button type="submit" style="border-radius: 9px; background-color:rgb(32, 70, 74)"
+                        class="ml-2 col-sm-2 btn btn-primary">Submit</button>
+                </form>
+
+                <!-- dead count form -->
+
+                <form action="" class="mr-2">
+                    <div class="form-group col-lg-4">
+                        <label for="deadcnt">Daily_dead</label>
+                        <input type="number" class="form-control" id="deadcnt" placeholder="No of dead">
+                    </div>
+                    <button type="submit" style="border-radius: 9px; "
+                    class="ml-2 col-sm-2 btn btn-danger">Submit</button>
+                </form>
+            </div>
+
 
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            referrerpolicy="no-referrer"></script>
+        <script src="asyncjs/index.js"></script>
 
-
-
-
-
-
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
 
 </html>
