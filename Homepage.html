@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./sass/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,8 +18,8 @@
 </head>
 
 <body>
-
-    <div class="row">
+    <div class="row" style="height: 100vh;">
+        <!-- left side -->
         <div class="col-3 dashboardcolor ">
             <!-- logo with our webapp name -->
             <div class=" d-flex flex-column align-items-center mt-3">
@@ -41,7 +43,7 @@
                             Health</a></div>
 
                 </div>
-            
+
                 <div style=" font-size: large; border-radius: 7px;" class="d-flex pl-2 hov">
                     <div><i class="fa-solid fa-egg" style="color: rgb(115, 184, 172);"></i></div>
                     <div style="margin-top: 4px; margin-left: 3px; font-size: smaller;"> <a href="#" class="ancor">
@@ -67,9 +69,11 @@
             <div class="d-flex mt-2 " style=" margin-left:5vh">
                 <div class=" " style="border-radius: 7px;"><a href="" id="clkdet" class="recact pl-2 pr-2"><strong
                             class=" text-danger">Farm_</strong>Details</a></div>
-                <div class="pl-2 pr-2 "><a id="clkdis" style="cursor:pointer;" class="recbarcursor pl-2 pr-2">Disease</a>
+                <div class="pl-2 pr-2 "><a id="clkdis" style="cursor:pointer;"
+                        class="recbarcursor pl-2 pr-2">Disease</a>
                 </div>
-                <div class="pl-2 pr-2 "><a id="clkprod" style="cursor:pointer;" class="recbarcursor pl-2 pr-2">Production</a>
+                <div class="pl-2 pr-2 "><a id="clkprod" style="cursor:pointer;"
+                        class="recbarcursor pl-2 pr-2">Production</a>
                 </div>
                 <!-- <div class="pl-2 pr-2"><a href="" class="recbarcursor pl-2 pr-2">Vaccination</a></div> -->
             </div>
@@ -107,15 +111,16 @@
                         <input type="number" class="form-control" id="deadcnt" placeholder="No of dead">
                     </div>
                     <button type="submit" style="border-radius: 9px; "
-                    class="ml-2 col-sm-2 btn btn-danger">Submit</button>
+                        class="ml-2 col-sm-2 btn btn-danger">Submit</button>
                 </form>
             </div>
 
 
         </div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
             referrerpolicy="no-referrer"></script>
-        <script src="asyncjs/index.js"></script>
+        <script src="jquery/index.js"></script>
 
 </body>
 

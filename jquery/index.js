@@ -7,7 +7,7 @@ $(document).ready(function () {
             url: "Homepage.html",
             success: function () {
                 $("#print").load("./htmlforms/formdisease.html");
-                $("#hide").css('visibility', 'hidden');
+                $("#hide").css('display', 'none');
                 $("#clkdis").removeClass("recbarcursor").addClass("recact");
                 $("#clkdet").removeClass("recact").addClass("recbarcursor");
                 $("#clkprod").removeClass("recact").addClass("recbarcursor");
@@ -26,7 +26,7 @@ $(document).ready(function () {
             url: "Homepage.html",
             success: function () {
                 $("#print").load("./htmlforms/production.html");
-                $("#hide").css('visibility', 'hidden');
+                $("#hide").css('display', 'none');
                 $("#clkdet").removeClass("recact").addClass("recbarcursor");
                 $("#clkdis").removeClass("recact").addClass("recbarcursor");
                 $("#clkprod").removeClass("recbarcursor").addClass("recact");
